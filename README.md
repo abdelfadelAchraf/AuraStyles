@@ -36,7 +36,7 @@ After installing AuraStyles, include it in your project:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AuraStyles Example</title>
-  <link rel="stylesheet" href="path/to/aurastyles.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aurastyles/dist/aurastyles.min.css">
 </head>
 <body>
   <div class="bg-primary-500 text-white p-4">
