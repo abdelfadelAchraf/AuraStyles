@@ -1,13 +1,162 @@
+// Buttons Component
+// ==============================================
+// This file provides a variety of button styles for AuraStyles.
+
+// Base Button Styles
 .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    background-color: #3498db;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    &:hover {
-      background-color: darken(#3498db, 10%);
-    }
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+// Button Sizes
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+// Button Variants
+// 1. Solid Buttons
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+
+  &:hover {
+    background-color: #0056b3;
   }
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+
+  &:hover {
+    background-color: #5a6268;
+  }
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+
+  &:hover {
+    background-color: #218838;
+  }
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+
+  &:hover {
+    background-color: #c82333;
+  }
+}
+
+// 2. Outline Buttons
+.btn-outline-primary {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+
+  &:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  border: 2px solid #6c757d;
+  color: #6c757d;
+
+  &:hover {
+    background-color: #6c757d;
+    color: #fff;
+  }
+}
+
+// 3. Diversity Buttons (Gradient Backgrounds)
+.btn-gradient-primary {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+
+  &:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }
+}
+
+.btn-gradient-secondary {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+
+  &:hover {
+    background: linear-gradient(135deg, #fad0c4, #ff9a9e);
+  }
+}
+
+// 4. Neon Buttons
+.btn-neon-primary {
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0 0 10px #007bff, 0 0 20px #007bff;
+
+  &:hover {
+    box-shadow: 0 0 20px #007bff, 0 0 40px #007bff;
+  }
+}
+
+.btn-neon-secondary {
+  background-color: #ff4757;
+  color: #fff;
+  box-shadow: 0 0 10px #ff4757, 0 0 20px #ff4757;
+
+  &:hover {
+    box-shadow: 0 0 20px #ff4757, 0 0 40px #ff4757;
+  }
+}
+
+// 5. Glassmorphism Buttons
+.btn-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+// 6. Icon Buttons
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .btn-icon-text {
+    margin-left: 0.5rem;
+  }
+}
+
+// 7. Rounded Buttons
+.btn-rounded {
+  border-radius: 50px;
+}
+
+// 8. Disabled Buttons
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

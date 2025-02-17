@@ -1,0 +1,175 @@
+// Forms Component
+// ==============================================
+// This file provides reusable form components for AuraStyles.
+
+// Base Form Styles
+.form {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  // Form Group (Wrapper for Form Elements)
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  // Form Label
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  // Form Input and Textarea
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    }
+  
+    &:disabled {
+      background-color: #f9f9f9;
+      cursor: not-allowed;
+    }
+  }
+  
+  // Form Textarea
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  // Form Select
+  .form-select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    }
+  
+    &:disabled {
+      background-color: #f9f9f9;
+      cursor: not-allowed;
+    }
+  }
+  
+  // Form Checkbox and Radio
+  .form-checkbox,
+  .form-radio {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    appearance: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  
+    &:checked {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+  
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    }
+  
+    &:disabled {
+      background-color: #f9f9f9;
+      cursor: not-allowed;
+    }
+  }
+  
+  // Form Radio (Circle Style)
+  .form-radio {
+    border-radius: 50%;
+  }
+  
+  // Form Validation States
+  .form-input.is-valid,
+  .form-textarea.is-valid,
+  .form-select.is-valid {
+    border-color: #28a745;
+  
+    &:focus {
+      border-color: #28a745;
+      box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+    }
+  }
+  
+  .form-input.is-invalid,
+  .form-textarea.is-invalid,
+  .form-select.is-invalid {
+    border-color: #dc3545;
+  
+    &:focus {
+      border-color: #dc3545;
+      box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+    }
+  }
+  
+  // Form Feedback (Validation Messages)
+  .form-feedback {
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+  
+  .form-feedback.valid-feedback {
+    color: #28a745;
+  }
+  
+  .form-feedback.invalid-feedback {
+    color: #dc3545;
+  }
+  
+  // Form Button
+  .form-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  
+    &:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+  }
