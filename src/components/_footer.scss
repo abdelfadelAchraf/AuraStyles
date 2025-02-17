@@ -1,0 +1,96 @@
+// Footer Component
+// ==============================================
+// This file provides a responsive footer component for AuraStyles.
+
+// Base Footer Styles
+.footer {
+    background-color: #2d3748;
+    color: #fff;
+    padding: 2rem 1rem;
+  }
+  
+  // Footer Container
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  // Footer Sections
+  .footer-section {
+    flex: 1 1 200px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-section ul li a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  // Footer Social Icons
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .footer-social a {
+    color: #a0aec0;
+    font-size: 1.25rem;
+    transition: color 0.2s ease;
+  
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  // Footer Bottom
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #4a5568;
+    color: #a0aec0;
+  }
+  
+  // Responsive Design
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-section {
+      flex: 1 1 100%;
+    }
+  
+    .footer-social {
+      justify-content: center;
+    }
+  }
