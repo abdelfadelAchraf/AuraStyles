@@ -147,7 +147,8 @@ AuraStyles is highly customizable. You can override the default variables in you
    // Import AuraStyles
    @import '~aurastyles/src/aurastyles';
 ```
-
+## Star the Repo
+If you like AuraStyles, please consider giving it a ⭐️ on [GitHub](https://github.com/abdelfadelAchraf/aurastyles).
 
 
 # License
