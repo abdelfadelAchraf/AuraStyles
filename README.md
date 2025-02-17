@@ -48,6 +48,7 @@ After installing AuraStyles, include it in your project:
 ```
 ### Utility Classes
 AuraStyles provides a wide range of utility classes for styling:
+
 ### colors:
 - **Text Colors:**
   ```bash
@@ -61,10 +62,11 @@ AuraStyles provides a wide range of utility classes for styling:
   ```bash
   .border-{color}-{shade} (e.g., .border-blue-400)
   ```
+  
 ### Spacing:  
-  - **Margin:**
+- **Margin:**
   ```bash
- .m-{size}, .mx-{size}, .my-{size}, .mt-{size}
+   .m-{size}, .mx-{size}, .my-{size}, .mt-{size}
   ```
 - **Padding:**
   ```bash
@@ -76,8 +78,8 @@ AuraStyles provides a wide range of utility classes for styling:
   ```
 
 
-  ### Typography:  
-  - **Font Size::**
+### Typography:  
+- **Font Size::**
   ```bash
   .text-{size} (e.g., .text-sm, .text-lg, .text-2xl)
   ```
@@ -90,10 +92,9 @@ AuraStyles provides a wide range of utility classes for styling:
   .text-left, .text-center, .text-right
   ```
 
-
-  ### Responsive Design:
+### Responsive Design:
   Use responsive variants of utilities by prefixing them with breakpoints:
-  - **Small Screen::**
+- **Small Screen::**
   ```bash
   .sm:{utility} (e.g., .sm:text-lg, .sm:bg-red-500)
   ```
@@ -109,7 +110,7 @@ AuraStyles provides a wide range of utility classes for styling:
 
 
 
-  ## Components:
+### Components:
   AuraStyles also includes pre-built components for common UI elements:
 - **Buttons:**
   ```bash
@@ -123,8 +124,8 @@ AuraStyles provides a wide range of utility classes for styling:
       <div class="card-body">
          <h3 class="card-title">Card Title</h3>
         <p class="card-text">This is a card with an image and text.</p>
+      </div>
     </div>
-  </div>
   ```
 - **Navbar:**
  ```bash
@@ -135,9 +136,9 @@ AuraStyles provides a wide range of utility classes for styling:
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
       </ul>
-  </nav>
+   </nav>
   ```
-## Customization:
+### Customization:
 AuraStyles is highly customizable. You can override the default variables in your project:
 ```bash
     // Override default colors
