@@ -1,0 +1,51 @@
+// _positions.scss
+
+// Position Utilities
+@each $position in static, relative, absolute, fixed, sticky {
+    .position-#{$position} {
+      position: $position !important;
+    }
+  }
+  
+  // Offset Utilities
+  $offsets: (0: 0, 25: 25%, 50: 50%, 75: 75%, 100: 100%);
+  
+  @each $key, $value in $offsets {
+    .top-#{$key} { top: $value !important; }
+    .right-#{$key} { right: $value !important; }
+    .bottom-#{$key} { bottom: $value !important; }
+    .left-#{$key} { left: $value !important; }
+  }
+  
+  // Transform Utilities for Centering
+  .translate-middle {
+    transform: translate(-50%, -50%) !important;
+  }
+  .translate-middle-x {
+    transform: translateX(-50%) !important;
+  }
+  .translate-middle-y {
+    transform: translateY(-50%) !important;
+  }
+  
+  // Z-Index Utilities
+  $z-indexes: (0: 0, 1: 1, 10: 10, 50: 50, 100: 100, auto: auto);
+  
+  @each $key, $value in $z-indexes {
+    .z-#{$key} { z-index: $value !important; }
+  }
+  
+  // Flex Positioning Helpers
+  .d-flex { display: flex !important; }
+  .d-inline-flex { display: inline-flex !important; }
+  
+  .justify-start { justify-content: flex-start !important; }
+  .justify-center { justify-content: center !important; }
+  .justify-end { justify-content: flex-end !important; }
+  .justify-between { justify-content: space-between !important; }
+  .justify-around { justify-content: space-around !important; }
+  
+  .align-start { align-items: flex-start !important; }
+  .align-center { align-items: center !important; }
+  .align-end { align-items: flex-end !important; }
+  

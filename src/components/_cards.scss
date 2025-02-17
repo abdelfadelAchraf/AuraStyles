@@ -1,0 +1,189 @@
+// Cards Component
+// ==============================================
+// This file provides multiple card styles for different use cases.
+
+// Base Card Styles
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  // Card Image
+  .card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  // Card Body
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  // Card Title
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  // Card Text
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  // Card Footer
+  .card-footer {
+    padding: 1rem 1.5rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+  }
+  
+  // Card Link
+  .card-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  // Card Styles
+  // ==============================================
+  
+  // 1. Basic Card
+  .card-basic {
+    @extend .card;
+  }
+  
+  // 2. Card with Image
+  .card-with-image {
+    @extend .card;
+  
+    .card-img {
+      border-bottom: 1px solid #eee;
+    }
+  }
+  
+  // 3. Card with Header
+  .card-with-header {
+    @extend .card;
+  
+    .card-header {
+      padding: 1rem 1.5rem;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #eee;
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+  }
+  
+  // 4. Card with Gradient Background
+  .card-gradient {
+    @extend .card;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+  
+    .card-title,
+    .card-text {
+      color: #fff;
+    }
+  
+    .card-footer {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  // 5. Card with Hover Effect
+  .card-hover-effect {
+    @extend .card;
+    position: relative;
+    overflow: hidden;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  
+    &:hover::before {
+      opacity: 1;
+    }
+  
+    .card-body {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+    }
+  }
+  
+  // 6. Card with Badge
+  .card-with-badge {
+    @extend .card;
+    position: relative;
+  
+    .card-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #ff4757;
+      color: #fff;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+  }
+  
+  // 7. Card with Shadow on Hover
+  .card-shadow-hover {
+    @extend .card;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    &:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  // 8. Card with Border
+  .card-with-border {
+    @extend .card;
+    border: 1px solid #eee;
+    box-shadow: none;
+  }
+  
+  // 9. Card with Rounded Corners
+  .card-rounded {
+    @extend .card;
+    border-radius: 16px;
+  }
+  
+  // 10. Card with Icon
+  .card-with-icon {
+    @extend .card;
+  
+    .card-icon {
+      font-size: 2rem;
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+  }

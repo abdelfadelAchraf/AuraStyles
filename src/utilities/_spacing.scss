@@ -1,0 +1,194 @@
+// Spacing Utilities with Responsive Support
+// ==============================================
+// This file provides utility classes for margin, padding, and gap.
+// Responsive variants are available for each utility.
+
+// Spacing Scale
+// Define a spacing scale for consistent spacing values.
+$spacing-scale: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 2rem,
+  6: 3rem,
+  7: 4rem,
+  8: 6rem,
+  9: 8rem,
+  10: 12rem,
+);
+
+// Directions
+// Define directions for margin and padding utilities.
+$directions: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+  x: (left, right),
+  y: (top, bottom),
+);
+
+// Breakpoints
+// Define breakpoints for responsive utilities.
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+// Base Spacing Utilities
+// Generate non-responsive margin, padding, and gap utilities.
+@each $size, $value in $spacing-scale {
+  // Margin
+  .m-#{$size} {
+    margin: $value !important;
+  }
+
+  .mx-#{$size} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+
+  .my-#{$size} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+
+  @each $prefix, $direction in $directions {
+    .m#{$prefix}-#{$size} {
+      @if $prefix == 'x' {
+        margin-left: $value !important;
+        margin-right: $value !important;
+      } @else if $prefix == 'y' {
+        margin-top: $value !important;
+        margin-bottom: $value !important;
+      } @else {
+        margin-#{$direction}: $value !important;
+      }
+    }
+  }
+
+  // Padding
+  .p-#{$size} {
+    padding: $value !important;
+  }
+
+  .px-#{$size} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+
+  .py-#{$size} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+
+  @each $prefix, $direction in $directions {
+    .p#{$prefix}-#{$size} {
+      @if $prefix == 'x' {
+        padding-left: $value !important;
+        padding-right: $value !important;
+      } @else if $prefix == 'y' {
+        padding-top: $value !important;
+        padding-bottom: $value !important;
+      } @else {
+        padding-#{$direction}: $value !important;
+      }
+    }
+  }
+
+  // Gap
+  .gap-#{$size} {
+    gap: $value !important;
+  }
+
+  .gap-x-#{$size} {
+    column-gap: $value !important;
+  }
+
+  .gap-y-#{$size} {
+    row-gap: $value !important;
+  }
+}
+
+// Responsive Spacing Utilities
+// Generate responsive margin, padding, and gap utilities.
+@each $breakpoint, $width in $breakpoints {
+  @media (min-width: $width) {
+    @each $size, $value in $spacing-scale {
+      // Margin
+      .#{$breakpoint}\:m-#{$size} {
+        margin: $value !important;
+      }
+
+      .#{$breakpoint}\:mx-#{$size} {
+        margin-left: $value !important;
+        margin-right: $value !important;
+      }
+
+      .#{$breakpoint}\:my-#{$size} {
+        margin-top: $value !important;
+        margin-bottom: $value !important;
+      }
+
+      @each $prefix, $direction in $directions {
+        .#{$breakpoint}\:m#{$prefix}-#{$size} {
+          @if $prefix == 'x' {
+            margin-left: $value !important;
+            margin-right: $value !important;
+          } @else if $prefix == 'y' {
+            margin-top: $value !important;
+            margin-bottom: $value !important;
+          } @else {
+            margin-#{$direction}: $value !important;
+          }
+        }
+      }
+
+      // Padding
+      .#{$breakpoint}\:p-#{$size} {
+        padding: $value !important;
+      }
+
+      .#{$breakpoint}\:px-#{$size} {
+        padding-left: $value !important;
+        padding-right: $value !important;
+      }
+
+      .#{$breakpoint}\:py-#{$size} {
+        padding-top: $value !important;
+        padding-bottom: $value !important;
+      }
+
+      @each $prefix, $direction in $directions {
+        .#{$breakpoint}\:p#{$prefix}-#{$size} {
+          @if $prefix == 'x' {
+            padding-left: $value !important;
+            padding-right: $value !important;
+          } @else if $prefix == 'y' {
+            padding-top: $value !important;
+            padding-bottom: $value !important;
+          } @else {
+            padding-#{$direction}: $value !important;
+          }
+        }
+      }
+
+      // Gap
+      .#{$breakpoint}\:gap-#{$size} {
+        gap: $value !important;
+      }
+
+      .#{$breakpoint}\:gap-x-#{$size} {
+        column-gap: $value !important;
+      }
+
+      .#{$breakpoint}\:gap-y-#{$size} {
+        row-gap: $value !important;
+      }
+    }
+  }
+}
