@@ -91,7 +91,7 @@ AuraStyles provides a wide range of utility classes for styling:
   ```bash
   .text-left, .text-center, .text-right
   ```
-
+- **...**
 ### Responsive Design:
   Use responsive variants of utilities by prefixing them with breakpoints:
 - **Small Screen::**
@@ -106,7 +106,7 @@ AuraStyles provides a wide range of utility classes for styling:
   ```bash
   .lg:{utility} (e.g., .lg:text-3xl, .lg:gap-6)
   ```
-
+- **...**
 
 
 
@@ -117,6 +117,7 @@ AuraStyles provides a wide range of utility classes for styling:
     <button class="btn btn-primary">Primary Button</button>
     <button class="btn btn-secondary">Secondary Button</button>
   ```
+- **...**  
 - **Cards:**
   ```bash
     <div class="card">
@@ -127,6 +128,7 @@ AuraStyles provides a wide range of utility classes for styling:
       </div>
     </div>
   ```
+- **...**
 - **Navbar:**
  ```bash
     <nav class="navbar">
