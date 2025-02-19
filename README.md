@@ -11,18 +11,6 @@ A lightweight, customizable, and easy-to-use CSS library for modern web developm
 - **Flexible**: Works with any framework or vanilla HTML.
 - **Theming**: Includes a rich color palette and easy theming options.
 
-## Installation
-
-You can install AuraStyles via npm:
-
-```bash
-npm install aurastyles
-```
-Or include it directly in your HTML via CDN:
-```bash
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aurastyles/dist/aurastyles.min.css">
-```
-# Usage.
 
 ## Basic Setup
 
@@ -153,6 +141,16 @@ AuraStyles is highly customizable. You can override the default variables in you
 ## Star the Repo
 If you like AuraStyles, please consider giving it a ⭐️ on [GitHub](https://github.com/abdelfadelAchraf/aurastyles).
 
+## Installation
 
+You can install AuraStyles via npm:
+
+```bash
+npm install aurastyles
+```
+Or include it directly in your HTML via CDN:
+```bash
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aurastyles/dist/aurastyles.min.css">
+```
 # License
 AuraStyles is licensed under the MIT License.
